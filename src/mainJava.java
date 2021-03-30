@@ -20,5 +20,9 @@ public class mainJava {
         return Name[rand.nextInt(5)];
 
     }
+    public static String generateGirlName(){
+        String girlName[] = {"Olivia", "Emma", "Ava", "Sophia", "Isabella"};
+        return girlName[rand.nextInt(5)];
+    }
 
 }
