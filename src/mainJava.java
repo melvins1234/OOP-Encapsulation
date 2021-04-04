@@ -9,8 +9,6 @@ public class mainJava {
 
         System.out.println(RandomBoyName());
 
-
-
     }
 
     public static String RandomBoyName(){
@@ -23,6 +21,13 @@ public class mainJava {
     public static String generateGirlName(){
         String girlName[] = {"Olivia", "Emma", "Ava", "Sophia", "Isabella"};
         return girlName[rand.nextInt(5)];
+    }
+
+    static String generateRelationships()
+    {
+        String[] relationship = {"hates", "loves", "is indifferent to", "is angry", "is apologetic"};
+
+        return relationship[(int)(Math.random()*5)];
     }
 
 }
