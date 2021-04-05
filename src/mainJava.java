@@ -7,7 +7,7 @@ public class mainJava {
     public static void main(String args[]){
 
 
-        System.out.println(RandomBoyName());
+        System.out.println(RandomBoyName()+" "+generateRelationships()+" "+generateGirlName());
 
     }
 
