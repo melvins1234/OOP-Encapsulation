@@ -25,7 +25,7 @@ public class mainJava {
 
     static String generateRelationships()
     {
-        String[] relationship = {"hates", "loves", "is indifferent to", "is angry", "is apologetic"};
+        String[] relationship = {"hates", "loves", "is indifferent to", "is angry with", "is apologetic to"};
 
         return relationship[(int)(Math.random()*5)];
     }
