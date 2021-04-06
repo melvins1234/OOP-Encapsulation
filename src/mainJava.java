@@ -6,28 +6,24 @@ public class mainJava {
 
     public static void main(String args[]){
 
+        BoyClass boyClass = new BoyClass();
+        GirlClass girlClass = new GirlClass();
+        Relationship relationship = new Relationship();
 
-        System.out.println(RandomBoyName()+" "+generateRelationships()+" "+generateGirlName());
 
-    }
-
-    public static String RandomBoyName(){
-
-        String Name[]= {"Rey", "Aron", "Mike", "Steve", "John"};
-
-        return Name[rand.nextInt(5)];
-
-    }
-    public static String generateGirlName(){
+        String boyName[]= {"Rey", "Aron", "Mike", "Steve", "John"};
         String girlName[] = {"Olivia", "Emma", "Ava", "Sophia", "Isabella"};
-        return girlName[rand.nextInt(5)];
-    }
+        String[] relationships = {"hates", "loves", "is indifferent to", "is angry with", "is apologetic to"};
 
-    static String generateRelationships()
-    {
-        String[] relationship = {"hates", "loves", "is indifferent to", "is angry with", "is apologetic to"};
+        boyClass.setBoyName(boyName);
+        girlClass.setGirlName(girlName);
+        relationship.setRelationship(relationships);
 
-        return relationship[(int)(Math.random()*5)];
+
+        System.out.println(boyClass.getBoyName()[rand.nextInt(5)]+" " +
+                relationship.getRelationship()[rand.nextInt(5)] + " "
+                +girlClass.getGirlName()[rand.nextInt(5)]);
+
     }
 
 }
