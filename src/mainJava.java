@@ -11,8 +11,8 @@ public class mainJava {
         Relationship relationship = new Relationship();
 
 
-        String boyName[]= {"Rey", "Aron", "Mike", "Steve", "John"};
-        String girlName[] = {"Olivia", "Emma", "Ava", "Sophia", "Isabella"};
+        String[] boyName = {"Rey", "Aron", "Mike", "Steve", "John"};
+        String[] girlName = {"Olivia", "Emma", "Ava", "Sophia", "Isabella"};
         String[] relationships = {"hates", "loves", "is indifferent to", "is angry with", "is apologetic to"};
 
         boyClass.setBoyName(boyName);
@@ -24,6 +24,14 @@ public class mainJava {
                 relationship.getRelationship()[rand.nextInt(5)] + " "
                 +girlClass.getGirlName()[rand.nextInt(5)]);
 
+
+        Bike newBike = new Bike();
+        newBike.setBikeName("test");
+
+        System.out.println(newBike.getBikeName());
+
+        Bike newBikeBike = new Bike("BikeName","BikeOwner", 23,"red");
+        System.out.println(newBikeBike.getBikeName());
     }
 
 }

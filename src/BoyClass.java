@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class BoyClass {
     private String[] boyName;
 
@@ -7,5 +9,12 @@ public class BoyClass {
 
     public void setBoyName(String[] boyName) {
         this.boyName = boyName;
+    }
+
+    @Override
+    public String toString() {
+        return "BoyClass{" +
+                "boyName=" + Arrays.toString(boyName) +
+                '}';
     }
 }
