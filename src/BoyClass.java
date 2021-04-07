@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 public class BoyClass {
-    protected String[] boyName;
+    private String[] boyName;
 
     public String[] getBoyName() {
         return boyName;
