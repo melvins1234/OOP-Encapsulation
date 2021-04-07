@@ -1,5 +1,5 @@
 public class GirlClass {
-    protected String[] girlName;
+    private String[] girlName;
 
     public String[] getGirlName() {
         return girlName;

@@ -1,8 +1,8 @@
 public class Bike {
-    protected String bikeName;
-    protected String owner;
-    protected int speed;
-    protected String color;
+    private String bikeName;
+    private String owner;
+    private int speed;
+    private String color;
 
     public Bike(String bikeName, String owner, int speed, String color) {
         this.bikeName = bikeName;
