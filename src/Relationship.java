@@ -1,5 +1,5 @@
 public class Relationship {
-    private String[] relationship;
+    protected String[] relationship;
 
     public String[] getRelationship() {
         return relationship;
